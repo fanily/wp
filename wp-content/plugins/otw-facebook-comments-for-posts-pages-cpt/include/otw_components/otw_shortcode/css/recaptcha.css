@@ -1,0 +1,33 @@
+#recaptcha_challenge_image, #recaptcha_widget_div {
+  width:272px !important;
+}
+#recaptcha_response_field {
+  width:84%!important;
+  height:66px!important;
+  font-size: 2em!important;
+  margin-right: 15px!important;
+  line-height: 66px!important;
+  float:left!important;
+}
+
+#recaptcha_image embed {
+  height:0!important;
+}
+.recaptcha-buttons .button.tiny i, .recaptcha-buttons .button.tiny {
+  margin:0!important;
+}
+
+.recaptcha-buttons ul {
+  list-style-type: none;
+}
+.recaptcha-buttons li {
+  line-height: 0 !important;
+}
+
+.recaptcha-buttons li a{
+  font-size: 8px !important;
+}
+
+.recaptcha-buttons li a{
+  font-size: 10px !important;
+}

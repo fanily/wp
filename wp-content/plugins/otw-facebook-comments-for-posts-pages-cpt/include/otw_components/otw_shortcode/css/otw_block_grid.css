@@ -1,0 +1,162 @@
+/* Block Grids ---------------------- */
+/* These are 2-up, 3-up, 4-up and 5-up ULs, suited
+for repeating blocks of content. Add 'mobile' to
+them to switch them just like the layout grid
+(one item per line) on phones
+
+For IE7/8 compatibility block-grid items need to be
+the same height. You can optionally uncomment the
+lines below to support arbitrary height, but know
+that IE7/8 do not support :nth-child.
+-------------------------------------------------- */
+.block-grid {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+}
+.block-grid > li {
+  display: block;
+  height: auto;
+  float: left;
+}
+.block-grid.one-up {
+  /* More unified spacing between blocks
+  @if $i == 1 { margin: 0; }
+  @if $i == 2 { margin: 0 -15px; }
+  @if $i == 3 { margin: 0 -12px; }
+  @if $i == 4 { margin: 0 -10px; }
+  @else { margin: 0 -8px; }
+  */
+  margin: 0 -10px;
+}
+.block-grid.one-up > li {
+  width: 100%;
+  /* More unified spacing between blocks
+  @if $i == 1 { padding: 0 0 15px; }
+  @if $i == 2 { padding: 0 15px 15px; }
+  @if $i == 3 { padding: 0 12px 12px; }
+  @if $i == 4 { padding: 0 10px 10px; }
+  @else { padding: 0 8px 8px; }
+  */
+  padding: 0 10px 10px;
+}
+.block-grid.two-up {
+  /* More unified spacing between blocks
+  @if $i == 1 { margin: 0; }
+  @if $i == 2 { margin: 0 -15px; }
+  @if $i == 3 { margin: 0 -12px; }
+  @if $i == 4 { margin: 0 -10px; }
+  @else { margin: 0 -8px; }
+  */
+  margin: 0 -10px;
+}
+.block-grid.two-up > li {
+  width: 50%;
+  /* More unified spacing between blocks
+  @if $i == 1 { padding: 0 0 15px; }
+  @if $i == 2 { padding: 0 15px 15px; }
+  @if $i == 3 { padding: 0 12px 12px; }
+  @if $i == 4 { padding: 0 10px 10px; }
+  @else { padding: 0 8px 8px; }
+  */
+  padding: 0 10px 10px;
+}
+.block-grid.two-up > li:nth-child(2n+1) {
+  clear: both;
+}
+.block-grid.three-up {
+  /* More unified spacing between blocks
+  @if $i == 1 { margin: 0; }
+  @if $i == 2 { margin: 0 -15px; }
+  @if $i == 3 { margin: 0 -12px; }
+  @if $i == 4 { margin: 0 -10px; }
+  @else { margin: 0 -8px; }
+  */
+  margin: 0 -10px;
+}
+.block-grid.three-up > li {
+  width: 33.33333%;
+  /* More unified spacing between blocks
+  @if $i == 1 { padding: 0 0 15px; }
+  @if $i == 2 { padding: 0 15px 15px; }
+  @if $i == 3 { padding: 0 12px 12px; }
+  @if $i == 4 { padding: 0 10px 10px; }
+  @else { padding: 0 8px 8px; }
+  */
+  padding: 0 10px 10px;
+}
+.block-grid.three-up > li:nth-child(3n+1) {
+  clear: both;
+}
+.block-grid.four-up {
+  /* More unified spacing between blocks
+  @if $i == 1 { margin: 0; }
+  @if $i == 2 { margin: 0 -15px; }
+  @if $i == 3 { margin: 0 -12px; }
+  @if $i == 4 { margin: 0 -10px; }
+  @else { margin: 0 -8px; }
+  */
+  margin: 0 -10px;
+}
+.block-grid.four-up > li {
+  width: 25%;
+  /* More unified spacing between blocks
+  @if $i == 1 { padding: 0 0 15px; }
+  @if $i == 2 { padding: 0 15px 15px; }
+  @if $i == 3 { padding: 0 12px 12px; }
+  @if $i == 4 { padding: 0 10px 10px; }
+  @else { padding: 0 8px 8px; }
+  */
+  padding: 0 10px 10px;
+}
+.block-grid.four-up > li:nth-child(4n+1) {
+  clear: both;
+}
+.block-grid.five-up {
+  /* More unified spacing between blocks
+  @if $i == 1 { margin: 0; }
+  @if $i == 2 { margin: 0 -15px; }
+  @if $i == 3 { margin: 0 -12px; }
+  @if $i == 4 { margin: 0 -10px; }
+  @else { margin: 0 -8px; }
+  */
+  margin: 0 -10px;
+}
+.block-grid.five-up > li {
+  width: 20%;
+  /* More unified spacing between blocks
+  @if $i == 1 { padding: 0 0 15px; }
+  @if $i == 2 { padding: 0 15px 15px; }
+  @if $i == 3 { padding: 0 12px 12px; }
+  @if $i == 4 { padding: 0 10px 10px; }
+  @else { padding: 0 8px 8px; }
+  */
+  padding: 0 10px 10px;
+}
+.block-grid.five-up > li:nth-child(5n+1) {
+  clear: both;
+}
+.block-grid.six-up {
+  /* More unified spacing between blocks
+  @if $i == 1 { margin: 0; }
+  @if $i == 2 { margin: 0 -15px; }
+  @if $i == 3 { margin: 0 -12px; }
+  @if $i == 4 { margin: 0 -10px; }
+  @else { margin: 0 -8px; }
+  */
+  margin: 0 -10px;
+}
+.block-grid.six-up > li {
+  width: 16.66667%;
+  /* More unified spacing between blocks
+  @if $i == 1 { padding: 0 0 15px; }
+  @if $i == 2 { padding: 0 15px 15px; }
+  @if $i == 3 { padding: 0 12px 12px; }
+  @if $i == 4 { padding: 0 10px 10px; }
+  @else { padding: 0 8px 8px; }
+  */
+  padding: 0 10px 10px;
+}
+.block-grid.six-up > li:nth-child(6n+1) {
+  clear: both;
+}
