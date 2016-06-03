@@ -1,0 +1,1 @@
+<form method="get" class="searchform" action="<?php echo esc_url(home_url('/')); ?>">	<fieldset>		<input type="text" name="s" class="s" placeholder="<?php _e('Search...', 'g7theme'); ?>">		<input type="image" src="<?php echo PARENT_URL; ?>/images/search.png" alt="<?php _e('Go', 'g7theme'); ?>" class="search-button">	</fieldset></form>

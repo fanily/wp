@@ -1,0 +1,610 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Compasso\n"
+"POT-Creation-Date: 2014-04-24 23:38+0700\n"
+"PO-Revision-Date: 2014-04-24 23:38+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../archive.php:11
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../archive.php:13
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../archive.php:15
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../archive.php:17
+msgid "Blog Archives"
+msgstr ""
+
+#: ../author.php:19
+msgid "Author Archives"
+msgstr ""
+
+#: ../category.php:6
+msgid "Subscribe to this category"
+msgstr ""
+
+#: ../comments.php:7
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../comments.php:20 ../comments.php:32
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:21 ../comments.php:33
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:22 ../comments.php:34
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:40
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-grid.php:57 ../content.php:51
+msgid "Read More"
+msgstr ""
+
+#: ../content-none.php:3
+msgid "Nothing Found"
+msgstr ""
+
+#: ../content-none.php:7
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: ../content-page.php:6 ../content-single.php:37 ../functions.php:533
+#: ../page-contact.php:41
+msgid "Edit"
+msgstr ""
+
+#: ../content-page.php:20 ../content-single.php:70 ../page-contact.php:49
+msgid "Pages"
+msgstr ""
+
+#: ../content-single.php:29
+msgid "Posted on"
+msgstr ""
+
+#: ../content-single.php:31
+msgid "by"
+msgstr ""
+
+#: ../content-single.php:33
+msgid "in"
+msgstr ""
+
+#: ../content-single.php:35
+msgid "with"
+msgstr ""
+
+#: ../content-single.php:60 ../includes/metabox/class.metabox.php:228
+msgid "Overall"
+msgstr ""
+
+#: ../content-single.php:77 ../includes/widgets/tabs.php:77
+msgid "Tags"
+msgstr ""
+
+#: ../content-single.php:83
+msgid "Share this post"
+msgstr ""
+
+#: ../content-single.php:99
+msgid "Author"
+msgstr ""
+
+#: ../content-single.php:106
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../content-single.php:118
+msgid "Related Posts"
+msgstr ""
+
+#: ../functions.php:134
+msgid "Main Menu"
+msgstr ""
+
+#: ../functions.php:135
+msgid "Top Menu"
+msgstr ""
+
+#: ../functions.php:168
+msgid "Navigate to..."
+msgstr ""
+
+#: ../functions.php:431 ../functions.php:458
+msgid "No related posts found"
+msgstr ""
+
+#: ../functions.php:495
+msgid "First"
+msgstr ""
+
+#: ../functions.php:498
+msgid "Previous"
+msgstr ""
+
+#: ../functions.php:510
+msgid "Next"
+msgstr ""
+
+#: ../functions.php:513
+msgid "Last"
+msgstr ""
+
+#: ../functions.php:533
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions.php:546
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions.php:549
+msgid "(Edit)"
+msgstr ""
+
+#: ../functions.php:553
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:555
+msgid "Reply"
+msgstr ""
+
+#: ../functions.php:581
+msgid "Home"
+msgstr ""
+
+#: ../functions.php:604
+msgid "Category Archives"
+msgstr ""
+
+#: ../functions.php:645
+msgid "Search Results for:"
+msgstr ""
+
+#: ../functions.php:647
+msgid "Post Tagged with:"
+msgstr ""
+
+#: ../functions.php:653
+msgid "Author Archive"
+msgstr ""
+
+#: ../functions.php:655
+msgid "Page Not Found"
+msgstr ""
+
+#: ../functions.php:861 ../includes/metabox/class.metabox.php:116
+#: ../includes/metabox/class.metabox.php:284
+#: ../includes/metabox/class.metabox.php:312 ../includes/widgets.php:103
+msgid "All Categories"
+msgstr ""
+
+#: ../functions.php:871
+msgid "View all posts under this category"
+msgstr ""
+
+#: ../header.php:71 ../searchform.php:1
+msgid "Search..."
+msgstr ""
+
+#: ../includes/ajax_action.php:12
+msgid "Please enter your name."
+msgstr ""
+
+#: ../includes/ajax_action.php:15
+msgid "Please enter your email."
+msgstr ""
+
+#: ../includes/ajax_action.php:17
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: ../includes/ajax_action.php:20
+msgid "Please enter your message."
+msgstr ""
+
+#: ../includes/ajax_action.php:24
+msgid "Sorry, there was a problem sending your message."
+msgstr ""
+
+#: ../includes/ajax_action.php:51
+msgid "Sorry, a server error occurred. Your message has not been sent."
+msgstr ""
+
+#: ../includes/metabox/class.metabox.php:224
+msgid "Add Rating"
+msgstr ""
+
+#: ../includes/metabox/class.metabox.php:225
+msgid "Criteria"
+msgstr ""
+
+#: ../includes/metabox/class.metabox.php:226
+msgid "Rating"
+msgstr ""
+
+#: ../includes/metabox/class.metabox.php:249
+msgid "Category"
+msgstr ""
+
+#: ../includes/metabox/class.metabox.php:253 ../includes/widgets.php:177
+msgid "Number of posts to show"
+msgstr ""
+
+#: ../includes/metabox/class.metabox.php:259
+msgid "Delete"
+msgstr ""
+
+#: ../includes/options/class.options.php:67
+#: ../includes/options/class.options.php:68
+#: ../includes/options/class.options.php:349
+msgid "Theme Options"
+msgstr ""
+
+#: ../includes/options/class.options.php:120
+msgid "Default options restored."
+msgstr ""
+
+#: ../includes/options/class.options.php:154
+msgid "Options saved."
+msgstr ""
+
+#: ../includes/options/class.options.php:381
+msgid "Save All Settings"
+msgstr ""
+
+#: ../includes/options/class.options.php:382
+msgid "Reset"
+msgstr ""
+
+#: ../includes/options/class.options.php:382
+msgid "Data will be reset to default. Are you sure?"
+msgstr ""
+
+#: ../includes/widgets.php:152 ../includes/widgets/ads-125.php:19
+#: ../includes/widgets/ads-300.php:19 ../includes/widgets/comments.php:19
+#: ../includes/widgets/contact.php:19 ../includes/widgets/facebook.php:19
+#: ../includes/widgets/flickr.php:19 ../includes/widgets/social.php:21
+#: ../includes/widgets/subpages.php:19 ../includes/widgets/twitter.php:19
+#: ../includes/widgets/video.php:19
+msgid "Title"
+msgstr ""
+
+#: ../includes/widgets.php:158
+msgid "Post order"
+msgstr ""
+
+#: ../includes/widgets.php:160
+msgid "Recent"
+msgstr ""
+
+#: ../includes/widgets.php:161 ../includes/widgets/tabs.php:76
+msgid "Popular"
+msgstr ""
+
+#: ../includes/widgets.php:162
+msgid "Random"
+msgstr ""
+
+#: ../includes/widgets.php:170
+msgid "Filter by Category"
+msgstr ""
+
+#: ../includes/widgets.php:186 ../includes/widgets/tabs.php:33
+msgid "Show thumbnails"
+msgstr ""
+
+#: ../includes/widgets.php:193
+msgid "Show ratings (if available)"
+msgstr ""
+
+#: ../includes/widgets.php:200 ../includes/widgets/tabs.php:38
+msgid "Show dates"
+msgstr ""
+
+#: ../includes/widgets.php:207
+msgid "Show comment links"
+msgstr ""
+
+#: ../includes/widgets.php:214
+msgid "Show excerpts"
+msgstr ""
+
+#: ../includes/widgets.php:216
+msgid "No"
+msgstr ""
+
+#: ../includes/widgets.php:217
+msgid "Show on first item"
+msgstr ""
+
+#: ../includes/widgets.php:218
+msgid "Show on all items"
+msgstr ""
+
+#: ../includes/widgets.php:357
+msgid "Default Sidebar"
+msgstr ""
+
+#: ../includes/widgets.php:383
+msgid "Footer 1"
+msgstr ""
+
+#: ../includes/widgets.php:391
+msgid "Footer 2"
+msgstr ""
+
+#: ../includes/widgets.php:399
+msgid "Footer 3"
+msgstr ""
+
+#: ../includes/widgets.php:407
+msgid "Footer 4"
+msgstr ""
+
+#: ../includes/widgets/ads-125.php:9
+msgid "Banner (125 pixels width)"
+msgstr ""
+
+#: ../includes/widgets/ads-125.php:24
+msgid "Banner 1 image url"
+msgstr ""
+
+#: ../includes/widgets/ads-125.php:29
+msgid "Banner 1 link"
+msgstr ""
+
+#: ../includes/widgets/ads-125.php:34
+msgid "Banner 2 image url"
+msgstr ""
+
+#: ../includes/widgets/ads-125.php:39
+msgid "Banner 2 link"
+msgstr ""
+
+#: ../includes/widgets/ads-300.php:9
+msgid "Banner (300 pixels width)"
+msgstr ""
+
+#: ../includes/widgets/ads-300.php:24
+msgid "Banner image url"
+msgstr ""
+
+#: ../includes/widgets/ads-300.php:29
+msgid "Banner link"
+msgstr ""
+
+#: ../includes/widgets/comments.php:9
+msgid "A list of latest comments"
+msgstr ""
+
+#: ../includes/widgets/comments.php:20
+msgid "Recent Comments"
+msgstr ""
+
+#: ../includes/widgets/comments.php:24
+msgid "Number of comments to show"
+msgstr ""
+
+#: ../includes/widgets/comments.php:31
+msgid "Show avatar"
+msgstr ""
+
+#: ../includes/widgets/contact.php:9
+msgid "Contact form with ajax validation"
+msgstr ""
+
+#: ../includes/widgets/contact.php:20
+msgid "Get In Touch"
+msgstr ""
+
+#: ../includes/widgets/contact.php:43 ../page-contact.php:81
+msgid "Name"
+msgstr ""
+
+#: ../includes/widgets/contact.php:48 ../page-contact.php:85
+msgid "Email"
+msgstr ""
+
+#: ../includes/widgets/contact.php:53 ../page-contact.php:89
+msgid "Message"
+msgstr ""
+
+#: ../includes/widgets/contact.php:57 ../page-contact.php:93
+msgid "Please leave this field blank"
+msgstr ""
+
+#: ../includes/widgets/contact.php:64 ../page-contact.php:97
+msgid "Send"
+msgstr ""
+
+#: ../includes/widgets/facebook.php:9
+msgid "Facebook like box"
+msgstr ""
+
+#: ../includes/widgets/facebook.php:24
+msgid "Facebook Page URL"
+msgstr ""
+
+#: ../includes/widgets/facebook.php:29
+msgid "Width"
+msgstr ""
+
+#: ../includes/widgets/facebook.php:34
+msgid "Height"
+msgstr ""
+
+#: ../includes/widgets/facebook.php:39
+msgid "Color Scheme"
+msgstr ""
+
+#: ../includes/widgets/facebook.php:48
+msgid "Show Faces"
+msgstr ""
+
+#: ../includes/widgets/facebook.php:57
+msgid "Show stream"
+msgstr ""
+
+#: ../includes/widgets/facebook.php:66
+msgid "Show header"
+msgstr ""
+
+#: ../includes/widgets/flickr.php:9
+msgid "Photos from a Flickr account"
+msgstr ""
+
+#: ../includes/widgets/flickr.php:20
+msgid "Photos on Flickr"
+msgstr ""
+
+#: ../includes/widgets/flickr.php:29
+msgid "Number of photos to show"
+msgstr ""
+
+#: ../includes/widgets/flickr.php:35
+msgid "Display"
+msgstr ""
+
+#: ../includes/widgets/posts.php:10
+msgid "A list of posts with several options"
+msgstr ""
+
+#: ../includes/widgets/reviews.php:14
+msgid "A list of latest reviews"
+msgstr ""
+
+#: ../includes/widgets/social.php:11
+msgid "Social media icons"
+msgstr ""
+
+#: ../includes/widgets/social.php:26
+msgid "Icon size"
+msgstr ""
+
+#: ../includes/widgets/social.php:36
+msgid "Style"
+msgstr ""
+
+#: ../includes/widgets/subpages.php:9
+msgid "A list of sub pages"
+msgstr ""
+
+#: ../includes/widgets/subpages.php:25
+msgid "Parent Page"
+msgstr ""
+
+#: ../includes/widgets/subpages.php:31
+msgid "Sort by"
+msgstr ""
+
+#: ../includes/widgets/tabs.php:9
+msgid "Latest posts, popular posts, tags"
+msgstr ""
+
+#: ../includes/widgets/tabs.php:19
+msgid "Number of latest posts to show"
+msgstr ""
+
+#: ../includes/widgets/tabs.php:26
+msgid "Number of popular posts to show"
+msgstr ""
+
+#: ../includes/widgets/tabs.php:43
+msgid "Show Comment Links"
+msgstr ""
+
+#: ../includes/widgets/tabs.php:75
+msgid "Latest"
+msgstr ""
+
+#: ../includes/widgets/twitter.php:9
+msgid "Latest twitter updates"
+msgstr ""
+
+#: ../includes/widgets/twitter.php:20
+msgid "Latest Tweets"
+msgstr ""
+
+#: ../includes/widgets/twitter.php:49
+msgid "Number of updates"
+msgstr ""
+
+#: ../includes/widgets/twitter.php:55
+msgid "Follow text"
+msgstr ""
+
+#: ../includes/widgets/twitter.php:56
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: ../includes/widgets/twitter.php:113
+msgid "ago"
+msgstr ""
+
+#: ../includes/widgets/video.php:9
+msgid "Featured video"
+msgstr ""
+
+#: ../includes/widgets/video.php:24
+msgid "Video Embed Code"
+msgstr ""
+
+#: ../includes/widgets/video.php:29
+msgid "Description"
+msgstr ""
+
+#: ../page-categories-masonry.php:30 ../page-categories.php:36
+#: ../page-categories.php:67
+msgid "Recent Posts"
+msgstr ""
+
+#: ../page-contact.php:57 ../page-contact.php:71
+msgid "Error"
+msgstr ""
+
+#: ../page-contact.php:64
+msgid "Success"
+msgstr ""
+
+#: ../search.php:10
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../searchform.php:1
+msgid "Go"
+msgstr ""
+
+#: ../slider.php:51
+msgid "read more"
+msgstr ""

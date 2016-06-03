@@ -1,0 +1,62 @@
+.g7mb-field {
+	margin: 10px 0;
+}
+.g7mb-label,
+.g7mb-input {
+	display: inline-block;
+	vertical-align: top;
+}
+.g7mb-label {
+	width: 24%;
+}
+/* 75% if field has label, 100% if no label */
+.g7mb-input {
+	width: 100%;
+}
+.g7mb-label ~ .g7mb-input {
+	width: 75%;
+}
+#wpcontent .g7mb-input option {
+	padding: 2px 4px;
+}
+.g7-slider {
+	/* width: 200px; */
+}
+.g7-rating {
+	width: 100%;
+}
+.g7-rating th {
+	text-align: left;
+}
+.g7-rating td {
+	padding: 5px 0;
+}
+.g7-rating-add {
+	margin: 10px 0 20px;
+}
+.g7-rating tfoot {
+	font-weight: bold;
+}
+.g7-dragdrop {
+	width: 350px;
+}
+.g7-add-item {
+	margin-bottom: 10px;
+}
+.g7-dragdrop .widget-placeholder {
+	width: 100%;
+}
+.g7-dragdrop .widget,
+.g7-dragdrop .widget-placeholder {
+	margin-bottom: 10px;
+}
+.g7-dragdrop-item {
+	display: none;
+}
+.g7-category-dropdown {
+	width: 100%;
+}
+.g7-dragdrop .widget-inside {
+	border-top: 0 none;
+	padding: 12px 12px 10px;
+}
