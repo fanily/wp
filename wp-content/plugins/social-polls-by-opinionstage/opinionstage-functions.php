@@ -209,11 +209,11 @@ function opinionstage_add_poll_page() {
 									<div class="os-icon icon-os-reports-personality"></div>													
 								</div>						
 								<div class="opinionstage-section-cell opinionstage-description-cell">
-									<div class="title">Personality Quiz</div>
+									<div class="title">Outcome Quiz</div>
 									<div class="example">e.g. What's your most dominant trait?</div>
 								</div>													
 								<div class="opinionstage-section-cell opinionstage-btn-cell">
-									<?php echo opinionstage_create_widget_link('personality', 'opinionstage-blue-btn'); ?>
+									<?php echo opinionstage_create_widget_link('outcome', 'opinionstage-blue-btn'); ?>
 								</div>																										
 							</div>
 							<div class="opinionstage-section-raw">
@@ -324,53 +324,8 @@ function opinionstage_add_poll_page() {
 							</div>
 						</div>
 					</div>
-				</div>	
+				</div>				
 				<div class="opinionstage-dashboard-left">
-					<div id="opinionstage-section-quiz" class="opinionstage-dashboard-section">
-						<div class="opinionstage-section-header">
-							<div class="opinionstage-section-title">Section</div>
-						</div>
-						<div class="opinionstage-section-content-wrapper">
-							<div class="opinionstage-section-content">
-								<div class="opinionstage-section-sub-title">
-									Add an engaging and fun section to your site
-								</div>
-								<div class="opinionstage-section-raw">
-									<div class="opinionstage-section-cell os-step-cell">
-										<div class="os-step">1</div>
-									</div>
-									<div class="opinionstage-section-cell os-step-details">									
-										<div class="os-step-title">Copy the following code:</div>
-										<input type="text" id="os-section-shortcode" readonly="readonly" value="[os-section]"></input>
-										<div class="os-section-type">											
-											<input checked="checked" id="feed_top_content" name="os-section" type="radio" value="top">
-											<label for="feed_top_content">Top content</label>
-											<input id="feed_my_content" name="os-section" type="radio" value="my" <?php echo($first_time ? "disabled" : "")?>>
-											<label for="feed_my_content" class="<?php echo($first_time ? "opinionstage-disabled" : "")?>">My content</label>
-										</div>										
-									</div>
-								</div>
-								<div class="opinionstage-section-raw">
-									<div class="opinionstage-section-cell os-step-cell os-step-2">
-										<div class="os-step">2</div>
-									</div>
-									<div class="opinionstage-section-cell os-step-details">									
-										<div class="os-step-title">
-											Paste to an existing page
-											<?php wp_dropdown_pages( array('post_type' => 'page', 'hierarchical' => 1, 'class' => 'os-page-select') ); ?>									
-											<a href="" class="os-edit-page" target='blank'>Edit</a>																					
-										</div>
-										<div class="os-step-title">
-											Or to a new page
-											<a href="<?php echo admin_url('post-new.php?post_type=page')?>" class="os-new-page" target='blank'>New</a>										
-										</div>										
-									</div>								
-								</div>
-							</div>						
-						</div>
-					</div>
-				</div>
-				<div class="opinionstage-dashboard-right">
 					<div id="opinionstage-section-help" class="opinionstage-dashboard-section">
 						<div class="opinionstage-section-header">						
 							<div class="opinionstage-section-title">Help</div>

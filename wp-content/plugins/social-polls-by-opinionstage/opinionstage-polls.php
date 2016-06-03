@@ -2,8 +2,8 @@
 /*
 Plugin Name: Poll, Survey, Quiz & Form by OpinionStage
 Plugin URI: http://www.opinionstage.com
-Description: Adds highly engaging polls & quizzes to your site. Easily add polls & quizzes to any post/page or to your site sidebar.
-Version: 15.8.0
+Description: Add a highly engaging poll, survey, quiz or form to your site. Easily add a poll, survey, quiz or form to any post/page or to your site sidebar.
+Version: 16.0.0
 Author: OpinionStage.com
 Author URI: http://www.opinionstage.com
 Text Domain: social-polls-by-opinionstage
@@ -12,7 +12,7 @@ Text Domain: social-polls-by-opinionstage
 /* --- Static initializer for Wordpress hooks --- */
 
 define('OPINIONSTAGE_SERVER_BASE', "www.opinionstage.com"); /* Don't include the protocol, added dynamically */
-define('OPINIONSTAGE_WIDGET_VERSION', '15.8.0');
+define('OPINIONSTAGE_WIDGET_VERSION', '16.0.0');
 define('OPINIONSTAGE_WIDGET_PLUGIN_NAME', 'Poll, Survey, Quiz & Form by OpinionStage');
 define('OPINIONSTAGE_WIDGET_API_KEY', 'wp35e8');
 define('OPINIONSTAGE_OPTIONS_KEY', 'opinionstage_widget');

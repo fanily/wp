@@ -1,18 +1,18 @@
 ﻿=== Poll, Survey, Quiz & Form by OpinionStage ===
 Contributors: OpinionStage.com
 Donate link: 
-Tags: interactive content, poll plugin, create poll, create polls, quiz plugin, create quiz, create quizzes, trivia quiz, personality quiz, social poll, standard poll, responsive poll, multiple poll, head-to-head poll, popup poll, sidebar poll, article poll, poll section, do a poll, it poll, shared poll, custom poll, custom polls, premade polls, flash poll, html poll, online poll, online polls, page poll, poll, pol, poll builder, poll directory, poll widget, premade user polls, polling, Polling System, polls, post poll, user polls, voting polls, easy polls, gallery poll, gallery polls, wordpress poll, wordpress poll widget, WordPress polls, wppolls, yop poll, polldaddy, polldaddy polls, video poll, video polls, image poll, image polls, wp polls, questionnaire, quiz, quizzes, quizes, post survey, sidebar survey, survey, survey form, survey form builder, survey plugin, survey tool, survey widget, surveys,  user survey, wordpress survey, wp survey, wpsurvey, vote, votes, voting, debate, feedback, list, lists, top 10 list, top 5 list, top 50 list, top 100 list, ranking list rating list, rate list, product list, social list, listicles, content marketing list, opinion, opinion stage, opinionstage, responsive list, resource list, resource list, listing, listing search, listings, product listings
+Tags: poll plugin, create poll, create polls, quiz plugin, survey, form, survey plugin, form plugin, create quiz, create quizzes, trivia quiz, personality quiz, social poll, standard poll, responsive poll, multiple poll, head-to-head poll, popup poll, sidebar poll, article poll, poll section, do a poll, it poll, shared poll, custom poll, custom polls, premade polls, flash poll, html poll, online poll, online polls, page poll, poll, pol, poll builder, poll directory, poll widget, premade user polls, polling, Polling System, polls, post poll, user polls, voting polls, easy polls, gallery poll, gallery polls, wordpress poll, wordpress poll widget, WordPress polls, wppolls, yop poll, polldaddy, polldaddy polls, video poll, video polls, image poll, image polls, wp polls, questionnaire, quiz, quizzes, quizes, post survey, sidebar survey, survey, survey form, survey form builder, survey plugin, survey tool, survey widget, surveys,  user survey, wordpress survey, wp survey, wpsurvey, vote, votes, voting, debate, feedback, list, lists, top 10 list, top 5 list, top 50 list, top 100 list, ranking list rating list, rate list, product list, social list, listicles, content marketing list, opinion, opinion stage, opinionstage, responsive list, resource list, resource list, listing, listing search, listings, product listings
 
 
 Requires at least: 2.8
 Tested up to: 4.5
 Stable tag: trunk
  
-Add a powerful & easy-to-use poll, survey, quiz & Form service. Create beautiful polls, surveys, quizzes & Forms that boost time on site and drive traffic to your site.
+Add a powerful poll, survey, quiz & form service to your site. Create a beatiful poll, survey, quiz or form.
 
 == Description ==
 
-The Opinion Stage poll, survey, quiz & Form plug-in allows you to easily add a poll, quiz or list to your website or Facebook page.
+The Opinion Stage poll, survey, quiz & form plug-in allows you to easily add a poll, quiz, survey or form to your website.
 
 = Poll Examples: =
 
@@ -24,19 +24,23 @@ http://www.youtube.com/watch?v=P7xKNlWbk0s
 
 For a quiz example, checkout this <a href="http://www.opinionstage.com/polldiscovery/can-we-guess-how-educated-you-are?o=wp35e8" target="_blank">Quiz.</a>
 
-= List Example: =
+= Survey Example: =
 
-For a List example, checkout this <a href="http://www.opinionstage.com/polldiscovery/the-5-best-sources-for-great-free-images?o=wp35e8" target="_blank">List.</a>
+For a Survey example, checkout this <a href="http://www.opinionstage.com/rsacks/help-us-improve-opinion-stage?o=wp35e8" target="_blank">Survey.</a>
+
+= Form Example: =
+
+For a Form example, checkout this <a href="http://www.opinionstage.com/assafparag/submit-email?o=wp35e8" target="_blank">Form.</a>
 
 = Why Opinion Stage? =
 
  * Discover opinions
- * Boost enagement - quiz & poll participation increases time-on-site, page views & shares
- * Drive traffic from quiz & poll shares in social networks
+ * Boost enagement - poll, survey, quiz and form participation increases time-on-site, page views & shares
+ * Drive traffic from poll, survey, quiz and form shares in social networks
  * Run contests and sweepstakes
- * Generate revenue by integrating ads in the polls & quizzes
- * Gather contact info such as emails & social profiles, while your audience participates in the polls & quizzes
- * Get up and going with your first poll or quiz in minutes" -> "Get up and going with your first poll or quiz in minutes, creating polls & quizzes with the service is highly intuitive and help is avialable when needed
+ * Generate revenue by integrating ads in the poll, survey, quiz and form
+ * Gather contact info such as emails & social profiles, while your audience participates in the poll, survey, quiz and form
+ * Get up and going with your first poll, survey, quiz and form in minutes" -> "Get up and going with your first poll, survey, quiz and form in minutes, creating polls, surveys, quizzes and forms with the service is highly intuitive and help is avialable when needed
 
 = Main Poll Features: =
 
@@ -92,14 +96,27 @@ For a List example, checkout this <a href="http://www.opinionstage.com/polldisco
  * Add intro media such as image or video to the quiz
  * Embed your quiz on your site or use the Opinion Stage quiz landing page
 
- = Main List Features: =
+ = Main Survey Features: =
 
- * List as many items as you like in one page/post
- * List includes title, text, image & social network integrations
- * Number the list entries
- * Add images to the list
- * Embed the list anywhere
- * Share lists in Facebook, Twitter & Google+
+ * Survey as many users as you like
+ * Survey users with various survey question types
+ * Surveys includes title, text, image & social network integrations
+ * Add images & videos to the Survey
+ * View the survey entries in the survey stats screen
+ * Export the Survey results
+ * Embed the Survey anywhere
+ * Share Surveys in Facebook, Twitter & Google+
+
+ = Main Form Features: =
+
+ * Add as many fields to the form as you like
+ * Forms includes title, text, image & social network integrations
+ * Add images to the form
+ * View the form entries in the form stats screen
+ * Export the form results
+ * Embed the form anywhere
+ * Share Forms in Facebook, Twitter & Google+
+
 
  = Language support = 
 
@@ -107,12 +124,12 @@ Opinion Stage supports over 42 languages, missing a language? Let us know!
 
  = About Opinion Stage: =
 
-Opinion Stage offers web sites a highly engaging poll, survey, quiz & Form solution. For more details on Opinion Stage's poll, survey, quiz & Form solutions, visit <a href="http://www.opinionstage.com?o=wp35e8" target="_blank">the Opinion Stage site.</a>
+Opinion Stage offers web sites a highly engaging poll, survey, quiz & form solution. For more details on Opinion Stage's poll, survey, quiz & Form solutions, visit <a href="http://www.opinionstage.com?o=wp35e8" target="_blank">the Opinion Stage site.</a>
 
 == Installation ==
 
-1. Upload the "poll, survey, quiz & Form by Opinion Stage" plug-in to your blog (or search for it) and then install the "poll, survey, quiz & Form by Opinion Stage" plugin on your plug-ins page
-2. Active it to start creating polls, surveys, quizzes and lists from the polls, survey, quiz & Form creation dashboard
+1. Upload the "poll, survey, quiz & form by Opinion Stage" plug-in to your blog (or search for it) and then install the "poll, survey, quiz & form by Opinion Stage" plugin on your plug-ins page
+2. Active it to start creating a poll, survey, quiz or form from the polls, survey, quiz & form creation dashboard
 
 == Frequently Asked Questions ==
 
@@ -132,19 +149,19 @@ While Opinion Stage offers all the standard features expected from an advanced a
 10.  Placements let you easily add polls to your sidebar, to an article section or as an auto-engage popup displayed on your site
 And many more...
 
-= How do I add a poll or quiz to my post/page? =
+= How do I add a poll, quiz, survey or form to my post/page? =
 
-1.	Create a new poll or quiz from the poll or quiz creation form
-2.	After the poll or quiz was created, click "Embed" link and then click the "WordPress" tab 
-3.	Copy the WordPress poll code ( e.g. [socialpoll id="119543"] ) or the quiz embed code and paste it into the blog post/page
+1.	Create a new poll, quiz, survey or form from the poll, quiz, survey or form
+2.	After the poll, quiz, survey or form was created, click "Embed" link and then click the "WordPress" tab 
+3.	Copy the WordPress poll, quiz, survey or form embed code and paste it into the blog post/page
 
-= Can I embed a poll, quiz or list manually? =
+= Can I embed a poll, quiz, survey or form manually? =
 
 Yes, just post the wordpress shortcode into any post/page
 
-= How do users share the poll or quiz in social networks? = 
+= How do users share the poll, quiz, survey or form in social networks? = 
 
-Users can either share the poll or quiz question from the social (e.g.Users can either share the poll or quiz by clicking on the social (e.g. Facebook, Twitter & Google+) sharing or by sharing their poll/vote directly in the social sharing dialog that is displayed automatically after they vote in the poll or participate in the quiz. Opinion Stage never shares anything on the users' behalf without getting explicit permission for it.
+Users can either share the poll, quiz, survey or form question from the social (e.g.Users can either share the poll, quiz, survey or form by clicking on the social (e.g. Facebook, Twitter & Google+) sharing or by sharing their poll/vote directly in the social sharing dialog that is displayed automatically after they vote in the poll or participate in the quiz, survey or form. Opinion Stage never shares anything on the users' behalf without getting explicit permission for it.
 
 = What types of online polls do you support? =
 
@@ -164,11 +181,11 @@ Opinion Stagte supports many poll settings. You can configure look & feel polls 
 
 = What types of quizzes do you support? =
 
-You can select between a trivia quiz and a personality quiz, we plan to offer a few more quiz types in the future. If there is a quiz type you are missing, please notify us!
+You can select between a trivia quiz and an outcome quiz, we plan to offer a few more quiz types in the future. If there is a quiz type you are missing, please notify us!
 
-= Do you offer read-made polls, quizzes and lists? =
+= Do you offer ready-made polls, quizzes, surveys or form? =
 
-Yes - our editors hand-pick the top polls, quizzes and list. You can browse the Opinion discover site and discover these polls, quizzes and lists. 
+Yes - our editors hand-pick polls, quizzes, form and surveys to showcase as examples. You can browse the Opinion discover site and discover these polls, quizzes. surveys and forms. 
 
 
 == Screenshots ==
@@ -181,42 +198,42 @@ Yes - our editors hand-pick the top polls, quizzes and list. You can browse the 
 
 == Other Notes ==
 
-The Opinion Stage poll & quiz plugin lets you display poll, quizzes & Form on your WordPress.org site 
+The Opinion Stage poll, survey, quiz and form plugin lets you display polls, quizzes, surveys & forms on your WordPress.org site 
 
-Running polls, quizzes & Forms on your site let's you increase engagement, drive more traffic to your blog, and learn more about what your readers think and their opinions
+Running polls, quizzes, surveys & forms on your site let's you increase engagement, drive more traffic to your blog, and learn more about what your readers think and their opinions
 
-To access the Opinion Stage Poll & Quiz WordPress dashboard:
+To access the Opinion Stage Poll, quiz, survey & form WordPress dashboard:
 
-Click on Poll & Quiz tools by Opinion Stage on the left-hand sidebar of your WordPress admin panel
+Click on poll, quiz, survey and form link on the left-hand sidebar of your WordPress admin panel
 
-To connect the poll & quiz plugin with your Opinion Stage account:
+To connect the poll, quiz, survey and form plugin with your Opinion Stage account:
 
-1. In the poll & quiz screen, enter your Opinion Stage account’s email address and click “Connect” at the top of the widget page. (After connecting the poll & quiz plugin to an account once, you can click “Switch” in the same place to associate the poll & quiz plugin with a different Opinion Stage account.)
+1. In the main poll, survey, quiz and form screen, enter your Opinion Stage account’s email address and click “Connect” at the top of the widget page. (After connecting the poll, survey, quiz & form plugin to an account once, you can click “Switch” in the same place to associate the poll, survey, quiz and form plugin with a different Opinion Stage account.)
 
 2. You will be redirected to a log-in screen on the Opinion Stage. Enter your credentials to connect your account. You will be redirected back to the widget page afterwards.
 
-If you haven’t yet created an account on Opinion Stage, click the Signup at the bottom right corner to create one. After completing signup, you will be directed to the poll, quiz and list creation dashboard, where you can start creating your polls, quizzes and lists.
+If you haven’t yet created an account on Opinion Stage, click the Signup at the bottom right corner to create one. After completing signup, you will be directed to the poll, survey, quiz and form creation dashboard, where you can start creating your polls, surveys, quizzes and forms.
 
-To add a poll, quiz, or list to any post/page:
+To add a poll, survey, quiz, or form to any post/page:
 
-1. Create your content (poll, quiz or list) on your content dashboard
-2. After the poll is created, click the Embed link in the poll creation form (you can also find this link in the content Dashboard)
-3. From the poll “Embed” dialog, click the “WordPress” tab and copy your poll’s shortcode
-4. Paste the poll shortcode in any post/page
+1. Create your content (poll, survey, quiz or form) on your content dashboard
+2. After the poll, quiz, survey or form is created, click the Embed link in the poll, survey, quiz or form creation form (you can also find this link in the content Dashboard)
+3. From the poll, quiz, survey or form, click “Embed” dialog, click the “WordPress” tab and copy the poll, survey, quiz or form shortcode
+4. Paste the poll, quiz, survey or form shortcode in any post/page
 
-To add a poll, quiz, or list to a fly-out placement:
+To add a poll, quiz, survey or form to a popup placement:
 
-In your Opinion Stage dashboard on WordPress, under placements, switch “Fly-out” on and click configure.
+In your Opinion Stage dashboard on WordPress, under placements, switch “Popup” on and click configure.
 
-Under “fill your placement,” select the poll, quiz or list you would like presented in your fly-out.
+Under “fill your placement,” select the poll, quiz, survey or form you would like presented in your popup.
 
-To add a poll, quiz, or list to an article section placement:
+To add a poll, quiz, survey or form to an article section placement:
 
 In your Opinion Stage dashboard on WordPress, under placements, switch on “Article Section” and click configure
 
-Under fill placement, select the poll, quiz or list you would like presented in your article section.
+Under fill placement, select the poll, survey, quiz or form you would like presented in your article section.
 
-To add a poll, quiz, or list to a sidebar placement:
+To add a poll, quiz, survey or form to a sidebar placement:
 
 1. In your Opinion Stage dashboard on WordPress, under placements, switch on “Sidebar Widget”
 
@@ -229,7 +246,7 @@ To add a poll, quiz, or list to a sidebar placement:
 5. Open the “Opinion Stage Sidebar Widget” for configuration
 
 a. “Title” adds a title to your sidebar poll. You can check or un-check the “Enabled” box to toggle this feature.
-b. Clicking “Configure content” will redirect you to your Opinion Stage sidebar placement page. Here you can select which poll, quiz, or list to display in the sidebar.
+b. Clicking “Configure content” will redirect you to your Opinion Stage sidebar placement page. Here you can select which poll, quiz, survey or form to display in the sidebar.
 
 Type of polls you can create
 
@@ -248,6 +265,10 @@ You can create many different types of quizzes: Trivia quiz, personality quiz, i
 N/A
 
 == Changelog ==
+  = Poll, Survey, Quiz & Form Version 16.0.0 =
+  * Updated help for new features
+  = Poll, Survey, Quiz & Form Version 15.9.0 =
+  * Rebranded Quiz name to Outcome, removed the section entry
   = Poll, Survey, Quiz & Form Version 15.8.0 =
   * Resolved an issue with the font
   = Poll, Survey, Quiz & Form Version 15.7.0 =
