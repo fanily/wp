@@ -21,7 +21,6 @@ switch ($image_view) {
 }
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('box mb20'); ?>>
-
 	<header class="entry-header mb20">
 		<?php g7_breadcrumbs(); ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -37,7 +36,7 @@ switch ($image_view) {
 			<?php edit_post_link(__('Edit', 'g7theme'), '(', ')'); ?>
 		</div>
 	</header>
-
+<div style="display:none">
 	<?php if (g7_option('single_featured_image') && (has_post_thumbnail())) : ?>
 		<?php if ($featured_image) : ?>
 			<div class="post-image clearfix mb20">
@@ -45,7 +44,7 @@ switch ($image_view) {
 			</div>
 		<?php endif; ?>
 	<?php endif; ?>
-
+</div>
 	<div class="entry-content clearfix mb20">
 		<?php if ($enable_rating) : ?>
 		<dl class="rating">
