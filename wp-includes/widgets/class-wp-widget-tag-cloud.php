@@ -53,6 +53,18 @@ class WP_Widget_Tag_Cloud extends WP_Widget {
 			}
 		}
 
+		/*********************************************************
+		* Limit the number of tags displayed by Tag Cloud widget *
+		*********************************************************/
+		add_filter( 'widget_tag_cloud_args', 'tj_tag_cloud_limit' );
+		function tj_tag_cloud_limit($args){
+			// Check if taxonomy option of the widget is set to tags
+			if ( isset($args['taxonomy']) && $args['taxonomy'] == 'post_tag' ){
+				$args['number'] = 12; // Number of tags to show
+			}
+			return $args;
+		}
+
 		/**
 		 * Filter the taxonomy used in the Tag Cloud widget.
 		 *
