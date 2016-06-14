@@ -142,6 +142,16 @@ class Hashtagger {
   // this function returns an array of hashtags from a given content - used by generate_tags()
   function get_hashtags_from_content( $content ) {
     preg_match_all( $this->regex_general, $content, $matches );
+
+    // ignore some hashtag
+    $tmp = array();
+    $arr_not_hashtag = array('CCC', 'eee', 'FF6E00', 'ff6e00', 'ccc', 'FF6E00');
+    foreach ( $matches[2] as $i ) {
+      if (!in_array($i, $arr_not_hashtag)) $tmp[] = $i;
+    }
+    // var_dump( $matches[2], $tmp);exit;
+    $matches[2] = $tmp;
+
     return implode( ', ', $matches[2] );
   }
   
