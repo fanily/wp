@@ -25,7 +25,7 @@ if ($lightbox) {
 				<div class="rating"><?php echo g7_rating($overall_rating); ?></div>
 			<?php endif; ?>
 			<span class="date"><?php the_time(get_option('date_format')); ?></span>
-			<span class="comments-link"><?php comments_popup_link(); ?></span>
+			<!--span class="comments-link"><?php comments_popup_link(); ?></span-->
 			<div class="excerpt">
 				<?php the_excerpt(); ?>
 			</div>
@@ -38,7 +38,7 @@ if ($lightbox) {
 		</div>
 		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 		<span class="date"><?php the_time(get_option('date_format')); ?></span>
-		<span class="comments-link"><?php comments_popup_link(); ?></span>
+		<!--span class="comments-link"><?php comments_popup_link(); ?></span-->
 		<div class="clear"></div>
 	</div>
 <?php endif; ?>
