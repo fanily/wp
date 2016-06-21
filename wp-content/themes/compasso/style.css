@@ -19,6 +19,7 @@ body {
 	font: 13px/22px 'Open Sans', Arial, sans-serif;
 	color: #444;
 	background-color: #f7f7f7;
+	font-size: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'PT Sans', Arial, sans-serif;
@@ -301,8 +302,8 @@ nav#top {
 -----------------------------------*/
 
 body > header {
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 15px;
+	margin-bottom: 5px;
 }
 #top-banner img {
 	float: right;
