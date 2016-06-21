@@ -38,7 +38,7 @@
 				<div id="logo">
 					<?php if (g7_option('logo') == '1') : ?>
 						<a href="<?php echo esc_url(home_url('/')); ?>">
-							<img src="<?php echo g7_option('logo_image'); ?>" alt="<?php bloginfo('name'); ?>">
+							<img src="<?php echo g7_option('logo_image'); ?>" width="150" alt="<?php bloginfo('name'); ?>">
 						</a>
 					<?php else : ?>
 						<h1>
