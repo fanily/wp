@@ -236,6 +236,7 @@
 			float: none;
 		}
 		iframe { width: 100%; }
+		.content { width: 300px; }
 		.widget .post > h3 { font-size: 100%; }
 		body { font-size: 130%; }
 
