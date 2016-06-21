@@ -4,18 +4,18 @@
 	<?php if (g7_option('footer_widget')) : ?>
 	<div id="footer-widget">
 		<div class="container">
-			<div class="four columns">
+			<div class="three columns">
 				<?php dynamic_sidebar('footer1'); ?>
 			</div>
-			<div class="four columns">
+			<div class="three columns">
 				<?php dynamic_sidebar('footer2'); ?>
 			</div>
-			<div class="four columns">
+			<div class="ten columns">
 				<?php dynamic_sidebar('footer3'); ?>
 			</div>
-			<div class="four columns">
+			<!--div class="four columns">
 				<?php dynamic_sidebar('footer4'); ?>
-			</div>
+			</div-->
 		</div>
 	</div>
 	<?php endif; ?>
