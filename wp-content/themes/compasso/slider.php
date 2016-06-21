@@ -48,7 +48,7 @@ $slider_height = 350;
 
 						<?php if (g7_option('slider_readmore')) : ?>
 						<div class="more">
-							<a class="btn" href="<?php the_permalink(); ?>"><?php _e('read more', 'g7theme'); ?></a>
+							<a class="btn" href="<?php the_permalink(); ?>"><?php _e('詳細內容', 'g7theme'); ?></a>
 						</div>
 						<?php endif; ?>
 					</div>

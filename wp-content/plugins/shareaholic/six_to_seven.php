@@ -383,7 +383,7 @@ class ShareaholicSixToSeven {
   private static function transform_recommendations_configuration($recommendations_configuration) {
     $settings = array(
       'below' => array(
-        'headline_text' => 'You may also like:',
+        'headline_text' => '延伸閱讀',
         // if they requested text, honor that,
         // otherwise give them the default style
         'theme' => $recommendations_configuration['style'] == 'text' ? 'text-only' : ''

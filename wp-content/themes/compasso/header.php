@@ -68,7 +68,7 @@
 				<?php g7_menu('mainmenu'); ?>
 				<form method="get" id="searchf" action="<?php echo esc_url(home_url('/')); ?>">
 					<input type="image" src="<?php echo PARENT_URL; ?>/images/search-16a.png" alt="Go" id="searchbtn">
-					<input type="text" name="s" id="cari" placeholder="<?php _e('Search...', 'g7theme'); ?>">
+					<input type="text" name="s" id="cari" placeholder="<?php _e('搜尋...', 'g7theme'); ?>">
 				</form>
 			</nav>
 

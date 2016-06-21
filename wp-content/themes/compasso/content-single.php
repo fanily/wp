@@ -25,14 +25,14 @@ switch ($image_view) {
 		<?php g7_breadcrumbs(); ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<div class="entry-meta">
-			<span><?php _e('Posted on', 'g7theme'); ?></span>
+			<span><?php _e('日期', 'g7theme'); ?></span>
 			<?php the_time(get_option('date_format')); ?>
-			<span><?php _e('by', 'g7theme'); ?></span>
-			<?php the_author(); ?>
-			<span><?php _e('in', 'g7theme'); ?></span>
+			<!--span><?php _e('作者', 'g7theme'); ?></span>
+			<?php the_author(); ?>-->
+			<span><?php _e('頻道', 'g7theme'); ?></span>
 			<?php the_category(', ') ?>
-			<span><?php _e('with', 'g7theme'); ?></span>
-			<?php comments_popup_link(); ?>
+			<!--span><?php _e('留言', 'g7theme'); ?></span>
+			<?php comments_popup_link(); ?>-->
 			<?php edit_post_link(__('Edit', 'g7theme'), '(', ')'); ?>
 		</div>
 	</header>
@@ -114,7 +114,7 @@ switch ($image_view) {
 
 <?php if (g7_option('single_related')) : ?>
 <div class="box widget mb20">
-	<h3><?php _e('Related Posts', 'g7theme'); ?></h3>
+	<h3><?php _e('相關文章', 'g7theme'); ?></h3>
 	<?php g7_related_posts($post->ID); ?>
 </div>
 <?php endif; ?>

@@ -166,7 +166,7 @@ if (!function_exists('g7_scripts')) {
 			'slider_slideshowSpeed' => g7_option('slider_slideshowSpeed'),
 			'slider_animationSpeed' => g7_option('slider_animationSpeed'),
 			'slider_pauseOnHover'   => g7_option('slider_pauseOnHover'),
-			'navigate_text'         => __('Navigate to...', 'g7theme'),
+			'navigate_text'         => __('選擇分類...', 'g7theme'),
 			'rtl'                   => is_rtl()
 		));
 		if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -493,10 +493,10 @@ if (!function_exists('g7_pagination')) {
 		if (1 != $pages) {
 			echo '<div class="pagination box">';
 			if ($paged > 2 && $paged > $range + 1 && $showitems < $pages) {
-				echo '<a href="'.get_pagenum_link(1).'"><span class="arrows">&laquo;</span> ' . __('First', 'g7theme') . '</a>';
+				echo '<a href="'.get_pagenum_link(1).'"><span class="arrows">&laquo;</span> ' . __('第一頁', 'g7theme') . '</a>';
 			}
 			if ($paged > 1 && $showitems < $pages) {
-				echo '<a href="'.get_pagenum_link($paged - 1).'"><span class="arrows">&lsaquo;</span> ' . __('Previous', 'g7theme') . '</a>';
+				echo '<a href="'.get_pagenum_link($paged - 1).'"><span class="arrows">&lsaquo;</span> ' . __('前一頁', 'g7theme') . '</a>';
 			}
 			for ($i = 1; $i <= $pages; $i++) {
 				if (1 != $pages && (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems)) {
@@ -508,10 +508,10 @@ if (!function_exists('g7_pagination')) {
 				}
 			}
 			if ($paged < $pages && $showitems < $pages) {
-				echo '<a href="'.get_pagenum_link($paged + 1).'">' . __('Next', 'g7theme') . ' <span class="arrows">&rsaquo;</span></a>';
+				echo '<a href="'.get_pagenum_link($paged + 1).'">' . __('下一頁', 'g7theme') . ' <span class="arrows">&rsaquo;</span></a>';
 			}
 			if ($paged < $pages-1 && $paged + $range - 1 < $pages && $showitems < $pages) {
-				echo '<a href="'.get_pagenum_link($pages).'">' . __('Last', 'g7theme') . ' <span class="arrows">&raquo;</span></a>';
+				echo '<a href="'.get_pagenum_link($pages).'">' . __('最終頁', 'g7theme') . ' <span class="arrows">&raquo;</span></a>';
 			}
 			echo "</div>\n";
 		}
@@ -579,7 +579,7 @@ if (!function_exists('g7_breadcrumbs')) {
 			PARENT_URL,
 			is_rtl() ? 'arrow-left2.gif' : 'arrow-right2.gif'
 		);
-		$name = __('Home', 'g7theme');
+		$name = __('首頁', 'g7theme');
 		$currentBefore = '<span class="bc-current">';
 		$currentAfter = '</span>';
 		echo '<p id="breadcrumbs">';
@@ -643,7 +643,7 @@ if (!function_exists('g7_breadcrumbs')) {
 				the_title();
 				echo $currentAfter;
 			} elseif (is_search()) {
-				echo $currentBefore . __('Search Results for:', 'g7theme'). ' &quot;' . get_search_query() . '&quot;' . $currentAfter;
+				echo $currentBefore . __('搜尋結果:', 'g7theme'). ' &quot;' . get_search_query() . '&quot;' . $currentAfter;
 			} elseif (is_tag()) {
 				echo $currentBefore . __('Post Tagged with:', 'g7theme'). ' &quot;';
 				single_tag_title();

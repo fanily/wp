@@ -7,7 +7,7 @@
 		<header class="page-header box mb20">
 			<?php g7_breadcrumbs(); ?>
 			<h1 class="page-title">
-				<?php printf(__('Search Results for: %s', 'g7theme'), '<span>' . get_search_query() . '</span>' ); ?>
+				<?php printf(__('搜尋結果: %s', 'g7theme'), '<span>' . get_search_query() . '</span>' ); ?>
 			</h1>
 		</header>
 
