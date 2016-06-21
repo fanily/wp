@@ -119,10 +119,11 @@ get_header();
 		<div class="sixteen columns">
 			<article id="post-<?php echo $category->term_id; ?>" class="box mb20 post-<?php echo $category->term_id; ?> page type-page status-publish hentry">
 	<header class="entry-header">
-		<p id="breadcrumbs"><a href="<?php echo get_site_url(); ?>/">Home</a> <span class="bc-separator"><img src="<?php echo get_site_url(); ?>/wp-content/themes/compasso/images/arrow-right2.gif" alt="»"></span> <span class="bc-current"><?php echo $category->name; ?></span></p>		<h1 class="entry-title"><?php echo $category->name; ?></h1>
+		<!--p id="breadcrumbs"><a href="<?php echo get_site_url(); ?>/">首頁</a> <span class="bc-separator"><img src="<?php echo get_site_url(); ?>/wp-content/themes/compasso/images/arrow-right2.gif" alt="»"></span> <span class="bc-current"><?php echo $category->name; ?></span></p-->
+		<h1 class="entry-title"><?php echo $category->name; ?></h1>
 		<div class="entry-meta"><?php if (function_exists('z_taxonomy_image')) z_taxonomy_image(); ?><div>
 		<!--<div class="entry-meta">(<a class="post-edit-link" href="<?php echo get_site_url(); ?>/wp-admin/post.php?post=<?php echo $category->term_id; ?>&amp;action=edit">Edit</a>)</div>-->
-		<div class="entry-meta">(<a class="post-edit-link" href="<?php echo get_site_url(); ?>/wp-admin/term.php?tag_ID=<?php echo $category->term_id; ?>&amp;action=edit">Edit</a>)</div>
+		<!--<div class="entry-meta">(<a class="post-edit-link" href="<?php echo get_site_url(); ?>/wp-admin/term.php?tag_ID=<?php echo $category->term_id; ?>&amp;action=edit">Edit</a>)</div-->
 	</header>
 			</article>
 		</div>
