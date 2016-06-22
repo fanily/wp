@@ -74,7 +74,7 @@ function apt_interface() {
                         // Get id's of all the published posts for which post thumbnails does not exist.
                         $query = "SELECT * FROM {$wpdb->posts} p where p.post_status = 'publish' AND p.ID NOT IN (
                                     SELECT DISTINCT post_id FROM {$wpdb->postmeta} WHERE meta_key IN ('_thumbnail_id', 'skip_post_thumb')
-                                  ) AND p.ID > 0 AND p.post_type = 'post' AND p.post_mime_type <> 'editor_posts'";
+                                  ) AND p.ID >= 41046 AND p.post_type = 'post' AND p.post_mime_type <> 'editor_posts'";
                         $posts = $wpdb->get_results($query);
 
                         if (empty($posts)) {
