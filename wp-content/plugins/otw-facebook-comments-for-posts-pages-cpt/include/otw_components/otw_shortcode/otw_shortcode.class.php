@@ -55,7 +55,7 @@ class OTW_Shortcode extends OTW_Component{
 	public function include_shortcodes(){
 
 		$this->add_default_external_lib( 'css', 'otw-shortcode-preview', $this->component_url.'css/otw_shortcode_preview.css', 'live_preview', 300 );
-		$this->add_default_external_lib( 'css', 'otw-font-familyopen-sans-condensed-light', 'http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1', 'admin', 0 );
+		$this->add_default_external_lib( 'css', 'otw-font-familyopen-sans-condensed-light', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1', 'admin', 0 );
 
 		include_once( $this->component_path.'shortcodes/otw_shortcodes.class.php' );
 

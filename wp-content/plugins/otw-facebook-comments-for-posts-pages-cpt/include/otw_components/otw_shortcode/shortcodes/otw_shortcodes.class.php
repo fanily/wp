@@ -531,7 +531,7 @@ class OTW_Shortcodes {
 
         $output .= "\n<!-- Google Webfonts -->\n";
 
-        $output .= '<link href="http://fonts.googleapis.com/css?family=' . $font . '" rel="stylesheet" type="text/css" />' . "\n\n";
+        $output .= '<link href="https://fonts.googleapis.com/css?family=' . $font . '" rel="stylesheet" type="text/css" />' . "\n\n";
 
         $output = str_replace('|"', '"', $output);
 
