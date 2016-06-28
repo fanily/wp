@@ -29,28 +29,28 @@ class OTW_Shortcodes {
 
     /**
      * Errors
-     * 
+     *
      * @var  array
      */
     public $errors = array();
 
     /**
      * has errors
-     * 
+     *
      * @var  boolen
      */
     public $has_error = false;
 
     /**
      * component url
-     * 
+     *
      * @var  string
      */
     public $component_url = '';
 
     /**
      * component path
-     * 
+     *
      * @var  string
      */
     public $component_path = '';
@@ -414,7 +414,7 @@ class OTW_Shortcodes {
      * apply predefined settings
      */
     public function apply_settings() {
-        
+
     }
 
     /**
@@ -442,7 +442,7 @@ class OTW_Shortcodes {
 
     /**
      *  format attribute
-     *  
+     *
      *  @param string name
      *
      *  @param string key
@@ -590,7 +590,7 @@ class OTW_Shortcodes {
     }
 
     public function register_external_libs() {
-        
+
     }
 
 
@@ -1116,10 +1116,10 @@ class OTW_Shortcodes {
 
 
     /**
-     * 
+     *
      * Short creation of text input field
-     * 
-     * @param string $element_name set the general name for ID 
+     *
+     * @param string $element_name set the general name for ID
      * @param string $label set the label for form element
      * @param string $description set the italic description text
      * @param array $source array with all stored info
@@ -1130,10 +1130,10 @@ class OTW_Shortcodes {
     }
 
     /**
-     * 
+     *
      * Short creation of text area field
-     * 
-     * @param string $element_name set the general name for ID 
+     *
+     * @param string $element_name set the general name for ID
      * @param string $label set the label for form element
      * @param string $description set the italic description text
      * @param array $source array with all stored info
@@ -1162,7 +1162,7 @@ class OTW_Shortcodes {
     }
 
     /**
-     * Generate uploader file 
+     * Generate uploader file
      * @param string $element_name set the from ID name
      * @param string $label set the element form label
      * @param string $description short description for each form element
@@ -1174,10 +1174,10 @@ class OTW_Shortcodes {
     }
 
     /**
-     * 
+     *
      * Short creation of text area field
-     * 
-     * @param string $element_name set the general name for ID 
+     *
+     * @param string $element_name set the general name for ID
      * @param string $label set the label for form element
      * @param string $description set the italic description text
      * @param array $source array with all stored info
@@ -1188,12 +1188,12 @@ class OTW_Shortcodes {
     }
 
 	public function _get_category_options(){
-		
+
 		$args = array();
 		$args['type']            = 'post';
 		$args['hide_empty']      = 0;
 		$args['number']          = 0;
-		
+
 		if( isset( $_GET['otw_options_ids'] ) && strlen( $_GET['otw_options_ids'] ) && preg_match( "/^([0-9]+,)*[0-9]+\$|^\$/i", $_GET['otw_options_ids'] ) ){
 			$args['include'] = explode( ',', $_GET['otw_options_ids'] );
 		}
@@ -1204,10 +1204,10 @@ class OTW_Shortcodes {
 			$args['number'] = $_GET['otw_options_limit'];
 		}
 		$all_items = get_categories( $args );
-		
+
 		$options  = array();
 		$options['results'] = array();
-		
+
 		if( is_array( $all_items ) && count( $all_items ) ){
 			foreach( $all_items as $item ){
 				$o_key = count( $options['results'] );
@@ -1219,29 +1219,29 @@ class OTW_Shortcodes {
 		echo json_encode( $options );
 		die;
 	}
-	
+
 	public function _get_author_options(){
-		
+
 		$args = array();
 		$args['hide_empty']      = 0;
 		$args['number']          = 0;
-		
+
 		if( isset( $_GET['otw_options_ids'] ) && strlen( $_GET['otw_options_ids'] ) && preg_match( "/^([0-9]+,)*[0-9]+\$|^\$/i", $_GET['otw_options_ids'] ) ){
 			$args['include'] = explode( ',', $_GET['otw_options_ids'] );
 		}
 		if( isset( $_GET['otw_search_term'] ) && strlen( $_GET['otw_search_term'] ) ){
 			$args['search'] = '*'.urldecode( $_GET['otw_search_term'] ).'*';
 		}
-		
+
 		if( isset( $_GET['otw_options_limit'] ) && strlen( $_GET['otw_options_limit'] ) && preg_match( "/^([0-9]+)$/i", $_GET['otw_options_limit'] ) ){
 			$args['number'] = $_GET['otw_options_limit'];
 		}
-		
+
 		$all_items = get_users( $args );
-		
+
 		$options  = array();
 		$options['results'] = array();
-		
+
 		if( is_array( $all_items ) && count( $all_items ) ){
 			foreach( $all_items as $item ){
 				$o_key = count( $options['results'] );
@@ -1253,29 +1253,29 @@ class OTW_Shortcodes {
 		echo json_encode( $options );
 		die;
 	}
-	
+
 	public function _get_tag_options(){
-		
+
 		$args = array();
 		$args['hide_empty']      = 0;
 		$args['number']          = 0;
-		
+
 		if( isset( $_GET['otw_options_ids'] ) && strlen( $_GET['otw_options_ids'] ) && preg_match( "/^([0-9]+,)*[0-9]+\$|^\$/i", $_GET['otw_options_ids'] ) ){
 			$args['include'] = explode( ',', $_GET['otw_options_ids'] );
 		}
 		if( isset( $_GET['otw_search_term'] ) && strlen( $_GET['otw_search_term'] ) ){
 			$args['search'] = urldecode( $_GET['otw_search_term'] );
 		}
-		
+
 		if( isset( $_GET['otw_options_limit'] ) && strlen( $_GET['otw_options_limit'] ) && preg_match( "/^([0-9]+)$/i", $_GET['otw_options_limit'] ) ){
 			$args['number'] = $_GET['otw_options_limit'];
 		}
-		
+
 		$all_items = get_terms( 'post_tag', $args );
-		
+
 		$options  = array();
 		$options['results'] = array();
-		
+
 		if( is_array( $all_items ) && count( $all_items ) ){
 			foreach( $all_items as $item ){
 				$o_key = count( $options['results'] );
@@ -1287,38 +1287,38 @@ class OTW_Shortcodes {
 		echo json_encode( $options );
 		die;
 	}
-	
+
 	public function _get_page_options( $postID = 0, $return_result = false ){
-		
+
 		$args = array();
 		$args['post_type']   = 'page';
 		$args['post_status'] = 'publish';
-		
+
 		if( $postID ){
 			$args['post__in'] = array( $postID );
 		}
-		
+
 		wp_reset_query();
 		$found_posts = new WP_Query( $args );
-		
+
 		$options  = array();
 		$options['results'] = array();
-		
+
 		if( isset( $found_posts->posts ) && is_array( $found_posts->posts ) ){
-			
+
 			foreach( $found_posts->posts as $item ){
-				
+
 				$o_key = count( $options['results'] );
 				$options['results'][ $o_key ] = array();
 				$options['results'][ $o_key ]['id'] = $item->ID;
 				$options['results'][ $o_key ]['text'] = $item->post_title;
 			}
 		}
-		
+
 		if( $return_result ){
 			return json_encode( $options );
 		}else{
-			
+
 			echo json_encode( $options );
 			die;
 		}
