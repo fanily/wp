@@ -1,15 +1,18 @@
 <?php
-/** 
+/**
  * WordPress 基本設定檔。
- *
- * 本檔案包含以下設定選項： MySQL 設定、資料表前綴、
- * 私密金鑰、WordPress 語言設定以及 ABSPATH。如需更多資訊，請
- * 前往 {@link http://codex.wordpress.org/Editing_wp-config.php 編輯
- * wp-config.php} Codex 頁面。或者向您的空間提供商諮詢關於 MySQL 設定資訊。
  *
  * 這個檔案用於安裝程式自動生成 wp-config.php 設定檔。
  * 您不需要將它用於您的網站，可以手動複製這個檔案，
  * 並重新命名為 "wp-config.php"，然後輸入相關訊息。
+ *
+ * 本檔案包含以下設定選項：
+ * * MySQL 設定
+ * * 資料表前綴
+ * * 私密金鑰
+ * * ABSPATH
+ *
+ * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
@@ -31,7 +34,7 @@ define('DB_HOST', 'localhost');
 define('DB_CHARSET', 'utf8');
 
 /** 資料庫對照型態。如果不確定請勿更改。 */
-define('DB_COLLATE', 'utf8_unicode_ci');
+define('DB_COLLATE', '');
 
 /**#@+
  * 認證唯一金鑰設定。
@@ -101,6 +104,8 @@ $table_prefix  = 'wp_';
  * 將此設定為 true 將可開啟開發時的通知顯示。
  * 強烈建議外掛與佈景主題開發人員使用 WP_DEBUG
  * 於他們的開發環境中。
+ *
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
 
