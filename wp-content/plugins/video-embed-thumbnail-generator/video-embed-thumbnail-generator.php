@@ -99,7 +99,7 @@ function kgvid_default_options_fn() {
 		"overlay_embedcode" => false,
 		"twitter_button" => false,
 		"twitter_username" => kgvid_get_jetpack_twitter_username(),
-		"facebook_button" => false,
+		"facebook_button" => true,
 		"downloadlink" => false,
 		"click_download" => "on",
 		"view_count" => false,
