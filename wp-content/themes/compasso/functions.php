@@ -429,7 +429,7 @@ if (!function_exists('g7_related_posts')) {
 		$tags = get_the_tags();
 		if (!$tags) {
 			?>
-			<span class="norelated"><?php _e('No related posts found', 'g7theme'); ?>.</span>
+			<span class="norelated"><?php _e('目前尚無相關文章', 'g7theme'); ?>.</span>
 			<?php
 			return;
 		}
@@ -456,7 +456,7 @@ if (!function_exists('g7_related_posts')) {
 				<?php endwhile; ?>
 			</ul>
 		<?php else: ?>
-			<span class="norelated"><?php _e('No related posts found', 'g7theme'); ?>.</span>
+			<span class="norelated"><?php _e('目前尚無相關文章', 'g7theme'); ?>.</span>
 		<?php endif; ?>
 		<?php
 		wp_reset_postdata();
@@ -580,8 +580,8 @@ if (!function_exists('g7_breadcrumbs')) {
 			is_rtl() ? 'arrow-left2.gif' : 'arrow-right2.gif'
 		);
 		$name = __('首頁', 'g7theme');
-		$currentBefore = '<span class="bc-current">';
-		$currentAfter = '</span>';
+		$currentBefore = '<!--span class="bc-current">';
+		$currentAfter = '</span-->';
 		echo '<p id="breadcrumbs">';
 		if (g7_option('breadcrumbs_text')) {
 			echo '<span class="bc-info">';
