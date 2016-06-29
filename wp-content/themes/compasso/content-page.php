@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('box mb20'); ?>>
 
 	<header class="entry-header">
-		<!--<?php g7_breadcrumbs(); ?>-->
+		<?php g7_breadcrumbs(); ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<!--<?php edit_post_link(__('Edit', 'g7theme'), '<div class="entry-meta">(', ')</div>'); ?>-->
 	</header>
