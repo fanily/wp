@@ -27,8 +27,8 @@ switch ($image_view) {
 		<div class="entry-meta">
 			<span><?php _e('日期', 'g7theme'); ?></span>
 			<?php the_time(get_option('date_format')); ?>
-			<!--span><?php _e('作者', 'g7theme'); ?></span>
-			<?php the_author(); ?>-->
+			<span><?php _e('作者', 'g7theme'); ?></span>
+			<?php the_author(); ?>
 			<span><?php _e('頻道', 'g7theme'); ?></span>
 			<?php the_category(', ') ?>
 			<!--span><?php _e('留言', 'g7theme'); ?></span>
