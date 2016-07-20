@@ -5,18 +5,17 @@ header('Content-Type: '.feed_content_type('rss-http').'; charset='.get_option('b
 //header('Content-Type: application/rss+xml; charset='.get_option('blog_charset'), true);
 echo '<?xml version="1.0" encoding="'.get_option('blog_charset').'"?'.'>';
 ?>
-<rss version="2.0"
- xmlns:content="http://purl.org/rss/1.0/modules/content/"
- xmlns:wfw="http://wellformedweb.org/CommentAPI/"
- xmlns:dc="http://purl.org/dc/elements/1.1/"
- xmlns:atom="http://www.w3.org/2005/Atom"
- xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
- xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
- <?php do_action('rss2_ns'); ?>>
+<rss version="2.0">
 <channel>
   <title><?php bloginfo_rss('name'); ?> - Feed</title>
   <link><?php bloginfo_rss('url') ?></link>
   <description><?php bloginfo_rss('description') ?></description>
+  <generator>Fanily 粉絲玩樂</generator>
+  <image>
+    <url>logo連結</url>
+    <title>Fanily 粉絲玩樂</title>
+    <link>https://www.fanily.tw/wp-content/uploads/2016/06/fanilylogo.png</link>
+  </image>
   <?php while(have_posts()) : the_post(); ?>
   <item ID='<?php the_ID() ?>'> 
     <title><![CDATA[<?php the_title_rss(); ?>]]></title>
@@ -27,15 +26,46 @@ echo '<?xml version="1.0" encoding="'.get_option('blog_charset').'"?'.'>';
 foreach ( ( get_the_category() ) as $category ) {
   echo "    <categoryname><![CDATA[" . $category->cat_name . "]]></categoryname>\n";
 }
+/*
 global $post;
 $img = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "full" );
 if ( $img )
   echo "    <photo><![CDATA[" . $img[0] . "]]></photo>\n";
+*/
+
+ob_start();
+the_content();
+$content = ob_get_clean();
+$content = preg_replace('/<\/?(a |b|span|strong)[^>]*>/i', '', $content);
+$content = preg_replace("[\r\n]", '', $content);
+$content = preg_replace('/<\/?(p|div|h1|h2|h3|h4)[^>]*>/i', "\n", $content);
+$content = str_replace('&nbsp;', ' ', $content);
+$content = html_entity_decode($content);
+$content = preg_split("/\n\n+/", $content);
+$text = array();
+foreach ($content as $line) {
+  $line = trim($line);
+  if ($line == '') continue;
+  $text[] = $line;
+}
+$photos = '';
+for ($i = 0; $i < count($text); $i ++) {
+  $line = $text[$i];
+  if (preg_match_all('/<img [^>]*src="([^"]+)"[^>]*alt="([^"]+)"[^>]*>/i', $line, $images, PREG_SET_ORDER)) {
+    $text[$i] = trim(preg_replace('/<\/?img[^>]*>/i', '', $line));
+    foreach ($images as $image) {
+      $photos .= '<aphoto paragraph="' . $i . '"><photo_url><![CDATA[' . $image[1] . ']]></photo_url><photo_desc><![CDATA[' . $image[2] . "]]></photo_desc></aphoto>\n";
+    }
+  }
+}
+$description = '';
+foreach ($text as $line) {
+  $description .= "<![CDATA[$line]]>\n";
+}
 ?>
+    <news_photos><?php echo $photos; ?></news_photos>
     <pubDate><?php echo mysql2date('Y-m-d H:i+0000', get_post_time('Y-m-d H:i:s', true), false); ?></pubDate>
-    <description><![CDATA[<?php the_content() ?>]]></description>
-    <?php rss_enclosure(); ?>
-    <?php do_action('rss2_item'); ?>
+    <description><?php echo $description; ?></description>
   </item>
   <?php endwhile; ?>
 </channel>
