@@ -36,10 +36,11 @@ if ( $img )
 ob_start();
 the_content();
 $content = ob_get_clean();
-$content = preg_replace('/<(a |b|span|strong)[^>]*>/i', '', $content);
-$content = preg_replace('/<\/(a|b|span|strong)>/i', '', $content);
 $content = preg_replace("[\r\n]", '', $content);
+$content = preg_replace('/<img [^>]*src="([^"]+)"[^>]*alt="([^"]+)"[^>]*>/i', "\x01$1\x02$2\x03", $content);
+$content = preg_replace("/<iframe [^>]*src=['\"]([^'\"]+)['\"][^>]*>/i", "\x04$1\x05", $content);
 $content = preg_replace('/<\/?(p|div|h1|h2|h3|h4)[^>]*>/i', "\n", $content);
+$content = preg_replace('/<[^>]+>/', '', $content);
 $content = str_replace('&nbsp;', ' ', $content);
 $content = html_entity_decode($content);
 $content = preg_split("/\n\n+/", $content);
@@ -50,15 +51,22 @@ foreach ($content as $line) {
   $text[] = $line;
 }
 $photos = '';
+$videos = '';
 for ($i = 0; $i < count($text); $i ++) {
   $line = $text[$i];
-  if (preg_match_all('/<img [^>]*src="([^"]+)"[^>]*alt="([^"]+)"[^>]*>/i', $line, $images, PREG_SET_ORDER)) {
-    $text[$i] = trim(preg_replace('/<\/?img[^>]*>/i', '', $line));
-    foreach ($images as $image) {
-      $photos .= '<aphoto paragraph="' . $i . '"><photo_url><![CDATA[' . $image[1] . ']]></photo_url><photo_desc><![CDATA[' . $image[2] . "]]></photo_desc></aphoto>\n";
+  if (preg_match_all("/\x01(.*?)\x02(.*?)\x03/", $line, $imgs, PREG_SET_ORDER)) {
+    foreach ($imgs as $img) {
+      $photos .= '<aphoto paragraph="' . $i . '"><photo_url><![CDATA[' . $img[1] . ']]></photo_url><photo_desc><![CDATA[' . $img[2] . "]]></photo_desc></aphoto>\n";
     }
   }
-  $text[$i] = preg_replace("/<iframe [^>]*src=['\"]([^'\"]+)['\"][^>]*>/i", '$1', $line);
+  $line = trim(preg_replace("/\x01.*?\x03/", '', $line));
+  if (preg_match_all("/\x04(.*?)\x05/", $line, $iframes, PREG_SET_ORDER)) {
+    foreach ($iframes as $iframe) {
+      $videos .= '<avideo paragraph="' . $i . '"><video_url><![CDATA[' . $iframe[1] . "]]></video_url><video_desc><![CDATA[]]></video_desc></avideo>\n";
+    }
+  }
+  $line = trim(preg_replace("/\x04.*?\x05/", '', $line));
+  $text[$i] = $line;
 }
 $description = '';
 foreach ($text as $line) {
@@ -66,6 +74,7 @@ foreach ($text as $line) {
 }
 ?>
     <news_photos><?php echo $photos; ?></news_photos>
+    <news_videos><?php echo $videos; ?></news_videos>
     <pubDate><?php echo mysql2date('Y-m-d H:i+0000', get_post_time('Y-m-d H:i:s', true), false); ?></pubDate>
     <description><?php echo $description; ?></description>
   </item>
