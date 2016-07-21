@@ -36,7 +36,8 @@ if ( $img )
 ob_start();
 the_content();
 $content = ob_get_clean();
-$content = preg_replace('/<\/?(a |b|span|strong)[^>]*>/i', '', $content);
+$content = preg_replace('/<(a |b|span|strong)[^>]*>/i', '', $content);
+$content = preg_replace('/<\/(a|b|span|strong)>/i', '', $content);
 $content = preg_replace("[\r\n]", '', $content);
 $content = preg_replace('/<\/?(p|div|h1|h2|h3|h4)[^>]*>/i', "\n", $content);
 $content = str_replace('&nbsp;', ' ', $content);
@@ -57,6 +58,7 @@ for ($i = 0; $i < count($text); $i ++) {
       $photos .= '<aphoto paragraph="' . $i . '"><photo_url><![CDATA[' . $image[1] . ']]></photo_url><photo_desc><![CDATA[' . $image[2] . "]]></photo_desc></aphoto>\n";
     }
   }
+  $text[$i] = preg_replace("/<iframe [^>]*src=['\"]([^'\"]+)['\"][^>]*>/i", '$1', $line);
 }
 $description = '';
 foreach ($text as $line) {
