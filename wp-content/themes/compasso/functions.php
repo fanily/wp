@@ -463,7 +463,6 @@ if (!function_exists('g7_related_posts')) {
 	}
 }
 
-
 /**
  * Pagination function
  *
@@ -492,27 +491,58 @@ if (!function_exists('g7_pagination')) {
 		}
 		if (1 != $pages) {
 			echo '<div class="pagination box">';
-			if ($paged > 2 && $paged > $range + 1 && $showitems < $pages) {
-				echo '<a href="'.get_pagenum_link(1).'"><span class="arrows">&laquo;</span> ' . __('第一頁', 'g7theme') . '</a>';
-			}
-			if ($paged > 1 && $showitems < $pages) {
-				echo '<a href="'.get_pagenum_link($paged - 1).'"><span class="arrows">&lsaquo;</span> ' . __('前一頁', 'g7theme') . '</a>';
-			}
-			for ($i = 1; $i <= $pages; $i++) {
-				if (1 != $pages && (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems)) {
-					if ($paged == $i) {
-						echo '<span class="current">'.$i.'</span>';
-					} else {
-						echo '<a href="'.get_pagenum_link($i).'" class="inactive">'.$i.'</a>';
-					}
+            if (!is_search()) {
+                if ($paged > 2 && $paged > $range + 1 && $showitems < $pages) {
+                    echo '<a href="'.get_pagenum_link(1).'"><span class="arrows">&laquo;</span> ' . __('第一頁', 'g7theme') . '</a>';
+                }
+                if ($paged > 1 && $showitems < $pages) {
+                    echo '<a href="'.get_pagenum_link($paged - 1).'"><span class="arrows">&lsaquo;</span> ' . __('前一頁', 'g7theme') . '</a>';
+                }
+                for ($i = 1; $i <= $pages; $i++) {
+                    if (1 != $pages && (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems)) {
+                        if ($paged == $i) {
+                            echo '<span class="current">'.$i.'</span>';
+                        } else {
+                            echo '<a href="'.get_pagenum_link($i).'" class="inactive">'.$i.'</a>';
+                        }
+                    }
+                }
+                if ($paged < $pages && $showitems < $pages) {
+                    echo '<a href="'.get_pagenum_link($paged + 1).'">' . __('下一頁', 'g7theme') . ' <span class="arrows">&rsaquo;</span></a>';
+                }
+                if ($paged < $pages-1 && $paged + $range - 1 < $pages && $showitems < $pages) {
+                    echo '<a href="'.get_pagenum_link($pages).'">' . __('最終頁', 'g7theme') . ' <span class="arrows">&raquo;</span></a>';
+                }
+            } else {
+				$t_paged = '';
+				foreach ($_GET as $k => $v) {
+					if ($k === 'paged') continue;
+					if ($t_paged !== '') $t_paged .= '&#038;';
+					$t_paged .= "$k=$v";
 				}
-			}
-			if ($paged < $pages && $showitems < $pages) {
-				echo '<a href="'.get_pagenum_link($paged + 1).'">' . __('下一頁', 'g7theme') . ' <span class="arrows">&rsaquo;</span></a>';
-			}
-			if ($paged < $pages-1 && $paged + $range - 1 < $pages && $showitems < $pages) {
-				echo '<a href="'.get_pagenum_link($pages).'">' . __('最終頁', 'g7theme') . ' <span class="arrows">&raquo;</span></a>';
-			}
+				$t_paged = trailingslashit( get_bloginfo( 'url' ) ) . '?' . $t_paged . '&#038;paged=';
+                if ($paged > 2 && $paged > $range + 1 && $showitems < $pages) {
+                    echo '<a href="'.$t_paged.'1'.'"><span class="arrows">&laquo;</span> ' . __('第一頁', 'g7theme') . '</a>';
+                }
+                if ($paged > 1 && $showitems < $pages) {
+                    echo '<a href="'.$t_paged.($paged - 1).'"><span class="arrows">&lsaquo;</span> ' . __('前一頁', 'g7theme') . '</a>';
+                }
+                for ($i = 1; $i <= $pages; $i++) {
+                    if (1 != $pages && (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems)) {
+                        if ($paged == $i) {
+                            echo '<span class="current">'.$i.'</span>';
+                        } else {
+                            echo '<a href="'.$t_paged.$i.'" class="inactive">'.$i.'</a>';
+                        }
+                    }
+                }
+                if ($paged < $pages && $showitems < $pages) {
+                    echo '<a href="'.$t_paged.($paged + 1).'">' . __('下一頁', 'g7theme') . ' <span class="arrows">&rsaquo;</span></a>';
+                }
+                if ($paged < $pages-1 && $paged + $range - 1 < $pages && $showitems < $pages) {
+                    echo '<a href="'.$t_paged.($pages).'">' . __('最終頁', 'g7theme') . ' <span class="arrows">&raquo;</span></a>';
+                }
+            }
 			echo "</div>\n";
 		}
 	}
