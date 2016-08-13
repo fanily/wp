@@ -36,7 +36,7 @@ if ( $img )
 ob_start();
 the_content();
 $content = ob_get_clean();
-$content = preg_replace("[\r\n]", '', $content);
+$content = preg_replace("[\r\n\x01-\x1f]", '', $content);
 $content = preg_replace('/<img [^>]*src="([^"]+)"[^>]*alt="([^"]+)"[^>]*>/i', "\x01$1\x02$2\x03", $content);
 $content = preg_replace("/<iframe [^>]*src=['\"]([^'\"]+)['\"][^>]*>/i", "\x04$1\x05", $content);
 $content = preg_replace('/<\/?(p|div|h1|h2|h3|h4)[^>]*>/i', "\n", $content);
@@ -67,6 +67,9 @@ for ($i = 0; $i < count($text); $i ++) {
   }
   $line = trim(preg_replace("/\x04.*?\x05/", '', $line));
   $text[$i] = $line;
+}
+if (preg_match('/^#/', end($text))) {
+  array_pop($text);
 }
 $description = '';
 foreach ($text as $line) {
