@@ -36,7 +36,8 @@ if ( $img )
 ob_start();
 the_content();
 $content = ob_get_clean();
-$content = preg_replace("[\r\n\x01-\x1f]", '', $content);
+$content = preg_replace('#class="wp-caption-text">[^<]*</p>#', '', $content);
+$content = preg_replace("#[\r\n\x01-\x1f]#", '', $content);
 $content = preg_replace('/<img [^>]*src="([^"]+)"[^>]*alt="([^"]+)"[^>]*>/i', "\x01$1\x02$2\x03", $content);
 $content = preg_replace("/<iframe [^>]*src=['\"]([^'\"]+)['\"][^>]*>/i", "\x04$1\x05", $content);
 $content = preg_replace('/<\/?(p|div|h1|h2|h3|h4)[^>]*>/i', "\n", $content);
@@ -57,6 +58,7 @@ for ($i = 0; $i < count($text); $i ++) {
   if (preg_match_all("/\x01(.*?)\x02(.*?)\x03/", $line, $imgs, PREG_SET_ORDER)) {
     foreach ($imgs as $img) {
       $photos .= '<aphoto paragraph="' . $i . '"><photo_url><![CDATA[' . $img[1] . ']]></photo_url><photo_desc><![CDATA[' . $img[2] . "]]></photo_desc></aphoto>\n";
+      //$photos .= '<aphoto paragraph="' . $i . '"><photo_url><![CDATA[' . $img[1] . "]]></photo_url><photo_desc><![CDATA[]]></photo_desc></aphoto>\n";
     }
   }
   $line = trim(preg_replace("/\x01.*?\x03/", '', $line));
